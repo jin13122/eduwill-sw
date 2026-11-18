@@ -1,0 +1,2396 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>에듀윌 국비교육원 | GEN-AI RAG 문자(음성)데이터 응용SW 개발자</title>
+    <meta
+      name="description"
+      content="에듀윌 국비교육원 GEN-AI RAG 문자(음성)데이터 응용SW 개발자 국비지원 과정. 생성형 AI, RAG 검색, STT/TTS, 클라우드 모델 서빙, MLOps 960시간 실무 교육 및 취업 연계 안내."
+    />
+    <meta
+      name="keywords"
+      content="에듀윌 국비교육원, GEN-AI, RAG, 생성형 AI, 응용SW 개발자, 문자 데이터, 음성 데이터, STT, OCR, 클라우드, MLOps, 국비지원, KDT"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#ffd400" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="에듀윌 국비교육원" />
+    <meta
+      property="og:title"
+      content="에듀윌 국비교육원 | GEN-AI RAG 문자(음성)데이터 응용SW 개발자"
+    />
+    <meta
+      property="og:description"
+      content="생성형 AI + 클라우드 + 음성·문자 데이터 처리 역량을 한 번에 익히는 960시간 실무 중심 개발자 양성과정"
+    />
+    <meta
+      property="og:image"
+      content="https://postfiles.pstatic.net/MjAyNjExMThfMjU2/MDAxNzk0OTg5MDgwMjU5.8N_1vUtsssf0qwHFAHd3ia_-FJGu0E77AuYafesKitEg.XZuUTvFbqwsmEx7PtYiewMtrAwJxAb_4pD1M5FwCUaIg.PNG/%EC%97%90%EB%93%80%EC%9C%8C_%EA%B5%AD%EB%B9%84%EA%B5%90%EC%9C%A1%EC%9B%90_%EB%A1%9C%EA%B3%A0.png?type=w773"
+    />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="에듀윌 국비교육원 | GEN-AI RAG 문자(음성)데이터 응용SW 개발자"
+    />
+    <meta
+      name="twitter:description"
+      content="생성형 AI + 클라우드 + 음성·문자 데이터 처리 역량을 한 번에 익히는 960시간 실무 중심 개발자 양성과정"
+    />
+    <meta
+      name="twitter:image"
+      content="https://postfiles.pstatic.net/MjAyNjExMThfMjU2/MDAxNzk0OTg5MDgwMjU5.8N_1vUtsssf0qwHFAHd3ia_-FJGu0E77AuYafesKitEg.XZuUTvFbqwsmEx7PtYiewMtrAwJxAb_4pD1M5FwCUaIg.PNG/%EC%97%90%EB%93%80%EC%9C%8C_%EA%B5%AD%EB%B9%84%EA%B5%90%EC%9C%A1%EC%9B%90_%EB%A1%9C%EA%B3%A0.png?type=w773"
+    />
+
+    <!-- Dynamic Canonical & og:url for Mobile/Desktop Search Engines -->
+    <script>
+      (function () {
+        if (window.location && /^https?:/.test(window.location.protocol)) {
+          var url = window.location.origin + window.location.pathname;
+          var canonical = document.createElement('link');
+          canonical.rel = 'canonical';
+          canonical.href = url;
+          document.head.appendChild(canonical);
+
+          var ogUrl = document.createElement('meta');
+          ogUrl.setAttribute('property', 'og:url');
+          ogUrl.content = url;
+          document.head.appendChild(ogUrl);
+        }
+      })();
+    </script>
+
+    <!-- Schema.org Structured Data (Course + EducationalOrganization) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "GEN-AI RAG 문자(음성)데이터 응용SW 개발자 과정",
+        "description": "생성형 AI + 클라우드 + 음성·문자 데이터 처리 역량을 한 번에 익히는 실무 중심 개발자 과정. RAG 검색 시스템 구축, STT/TTS, OCR, 클라우드 모델 서빙 및 MLOps까지 총 960시간 교육.",
+        "inLanguage": "ko",
+        "timeRequired": "PT960H",
+        "educationalLevel": "실무 중심 국비지원 양성과정",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "에듀윌 국비교육원",
+          "sameAs": "https://naver.me/5qLaGB0M"
+        },
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "onsite",
+          "courseWorkload": "PT960H"
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <style>
+      :root {
+        --bg-canvas: #ffffff;
+        --bg-subtle: #f8f9fb;
+        --text-primary: #111827;
+        --text-secondary: #4b5563;
+        --text-muted: #6b7280;
+        --border-hairline: #e5e7eb;
+        --border-strong: #d1d5db;
+
+        /* Eduwill Yellow Accent */
+        --eduwill-yellow: #ffd400;
+        --eduwill-yellow-hover: #f2c600;
+        --eduwill-yellow-soft: #fffbeb;
+        --eduwill-yellow-border: #fde047;
+        --eduwill-amber-text: #9a6700;
+        --eduwill-ink: #111827;
+
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 18px;
+        --shadow-card: 0 1px 2px rgba(17, 24, 39, 0.04);
+        --shadow-elevated: 0 14px 34px -12px rgba(17, 24, 39, 0.1);
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--bg-canvas);
+        color: var(--text-primary);
+        font-family: 'Pretendard', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont,
+          'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        overflow-x: hidden;
+        word-break: keep-all;
+      }
+
+      .font-display {
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+      }
+
+      .tabular-nums {
+        font-variant-numeric: tabular-nums;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding: 0;
+        color: inherit;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--eduwill-ink);
+        outline-offset: 2px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1160px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      /* Scroll Reveal */
+      [data-reveal] {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+        transition: opacity 560ms var(--ease-out), transform 560ms var(--ease-out);
+      }
+
+      [data-reveal].is-visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      [data-reveal-delay='1'] {
+        transition-delay: 60ms;
+      }
+
+      [data-reveal-delay='2'] {
+        transition-delay: 120ms;
+      }
+
+      /* 1. Top Strip Banner */
+      .top-strip {
+        background-color: var(--eduwill-ink);
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .top-strip-inner {
+        min-height: 38px;
+        padding: 7px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px 14px;
+        text-align: center;
+      }
+
+      .top-strip-highlight {
+        color: var(--eduwill-yellow);
+        font-weight: 800;
+      }
+
+      .top-strip-sep {
+        color: rgba(255, 255, 255, 0.28);
+      }
+
+      .top-strip-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--eduwill-yellow);
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        white-space: nowrap;
+      }
+
+      .top-strip-link:hover {
+        color: #ffffff;
+      }
+
+      /* 2. Sticky Header (3-Zone Top Bar) */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background-color: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-hairline);
+      }
+
+      .header-inner {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .brand-link {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+
+      .brand-logo-img {
+        height: 44px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+      }
+
+      .brand-fallback {
+        display: none;
+        font-size: 19px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: var(--eduwill-ink);
+        align-items: center;
+        gap: 8px;
+      }
+
+      .brand-fallback-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        background-color: var(--eduwill-yellow);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .nav-link {
+        font-size: 14.5px;
+        font-weight: 600;
+        color: var(--text-secondary);
+        white-space: nowrap;
+        flex-shrink: 0;
+        position: relative;
+        padding: 4px 0;
+        transition: color 180ms var(--ease-out);
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: var(--eduwill-yellow);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 180ms var(--ease-out);
+      }
+
+      .nav-link:hover {
+        color: var(--text-primary);
+      }
+
+      .nav-link:hover::after {
+        transform: scaleX(1);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: var(--eduwill-yellow);
+        color: var(--eduwill-ink);
+        font-size: 14px;
+        font-weight: 800;
+        padding: 10px 20px;
+        border-radius: var(--radius-sm);
+        white-space: nowrap;
+        flex-shrink: 0;
+        min-height: 44px;
+        box-shadow: 0 2px 6px rgba(255, 212, 0, 0.25);
+        transition: background-color 180ms var(--ease-out), transform 180ms var(--ease-out);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--eduwill-yellow-hover);
+        transform: translateY(-1px);
+      }
+
+      .btn-primary-lg {
+        padding: 14px 28px;
+        font-size: 15.5px;
+        min-height: 50px;
+        border-radius: 10px;
+      }
+
+      .btn-secondary-lg {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: #ffffff;
+        color: var(--text-primary);
+        border: 1px solid var(--border-strong);
+        font-size: 15.5px;
+        font-weight: 700;
+        padding: 14px 26px;
+        border-radius: 10px;
+        white-space: nowrap;
+        flex-shrink: 0;
+        min-height: 50px;
+        transition: border-color 180ms var(--ease-out), background-color 180ms var(--ease-out),
+          transform 180ms var(--ease-out);
+      }
+
+      .btn-secondary-lg:hover {
+        border-color: var(--eduwill-ink);
+        background-color: var(--bg-subtle);
+        transform: translateY(-1px);
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border-hairline);
+        color: var(--text-primary);
+      }
+
+      .mobile-drawer {
+        display: none;
+        border-top: 1px solid var(--border-hairline);
+        background-color: #ffffff;
+        padding: 14px 20px 18px;
+      }
+
+      .mobile-drawer.is-open {
+        display: block;
+      }
+
+      .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .mobile-nav-link {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text-primary);
+        padding: 12px 4px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--bg-subtle);
+      }
+
+      /* Shared Section Styles */
+      .section {
+        padding: 84px 0;
+        scroll-margin-top: 76px;
+      }
+
+      .section-subtle {
+        background-color: var(--bg-subtle);
+        border-top: 1px solid var(--border-hairline);
+        border-bottom: 1px solid var(--border-hairline);
+      }
+
+      .section-header-center {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 44px;
+      }
+
+      .section-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        color: var(--eduwill-amber-text);
+        margin-bottom: 10px;
+      }
+
+      .kicker-bar {
+        width: 22px;
+        height: 3px;
+        background-color: var(--eduwill-yellow);
+        display: inline-block;
+      }
+
+      .section-title {
+        margin: 0;
+        font-size: clamp(1.6rem, 3vw, 2.35rem);
+        font-weight: 800;
+        line-height: 1.3;
+        letter-spacing: -0.025em;
+        color: var(--text-primary);
+        text-wrap: balance;
+      }
+
+      .section-subtitle {
+        margin: 12px auto 0;
+        font-size: 15.5px;
+        color: var(--text-secondary);
+        max-width: 600px;
+      }
+
+      .highlight-underline {
+        background: linear-gradient(transparent 58%, rgba(255, 212, 0, 0.7) 58%);
+        padding: 0 3px;
+      }
+
+      /* Section 1: Centered Hero */
+      .hero-section {
+        position: relative;
+        padding: 68px 0 72px;
+        background: radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 212, 0, 0.13) 0%,
+            rgba(255, 212, 0, 0) 56%
+          ),
+          #ffffff;
+        border-bottom: 1px solid var(--border-hairline);
+        overflow: hidden;
+      }
+
+      .hero-grid-bg {
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(to right, rgba(17, 24, 39, 0.028) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(17, 24, 39, 0.028) 1px, transparent 1px);
+        background-size: 48px 48px;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 95%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 95%);
+        pointer-events: none;
+      }
+
+      .hero-center-wrap {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .hero-kicker-line {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 13.5px;
+        font-weight: 700;
+        color: var(--eduwill-amber-text);
+        margin-bottom: 16px;
+      }
+
+      .hero-sep {
+        color: var(--border-strong);
+      }
+
+      .hero-title {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: clamp(2rem, 4.4vw, 3.45rem);
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        color: var(--text-primary);
+        text-wrap: balance;
+      }
+
+      .hero-title-accent {
+        display: inline-block;
+        background: linear-gradient(transparent 58%, var(--eduwill-yellow) 58%);
+        padding: 0 6px;
+      }
+
+      /* Strictly single-line subtitle as requested */
+      .hero-desc {
+        margin: 18px auto 0;
+        font-size: clamp(9.2px, 2.45vw, 17px);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: var(--text-secondary);
+        white-space: nowrap;
+        max-width: 100%;
+      }
+
+      .hero-ctas {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      /* Hero 4 Summary Cards */
+      .hero-cards-grid {
+        position: relative;
+        z-index: 1;
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .hero-card {
+        background-color: #ffffff;
+        border: 1px solid var(--border-hairline);
+        border-radius: var(--radius-md);
+        padding: 22px 16px;
+        text-align: center;
+        box-shadow: var(--shadow-card);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .hero-card.is-accent {
+        border-color: var(--eduwill-yellow-border);
+        background-color: #fffef6;
+      }
+
+      .hero-card-kicker {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--eduwill-amber-text);
+        margin-bottom: 4px;
+      }
+
+      .hero-card-value {
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: 19px;
+        font-weight: 800;
+        color: var(--text-primary);
+        letter-spacing: -0.02em;
+      }
+
+      .hero-card-sub {
+        margin-top: 4px;
+        font-size: 12.5px;
+        color: var(--text-muted);
+      }
+
+      /* Section 2: 3 Visions + Compact Dark Tech Stack Bar */
+      .vision-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .vision-card {
+        background-color: #ffffff;
+        border: 1px solid var(--border-hairline);
+        border-radius: var(--radius-md);
+        padding: 28px 26px;
+        box-shadow: var(--shadow-card);
+      }
+
+      .vision-num {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        color: var(--eduwill-ink);
+        background-color: var(--eduwill-yellow);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+      }
+
+      .vision-title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--text-primary);
+        letter-spacing: -0.015em;
+      }
+
+      .vision-desc {
+        margin: 8px 0 0;
+        font-size: 14.5px;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .target-career-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        align-items: stretch;
+      }
+
+      .target-career-box {
+        background-color: #ffffff;
+        border: 1px solid var(--border-hairline);
+        border-radius: var(--radius-md);
+        padding: 28px 28px;
+        box-shadow: var(--shadow-card);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .target-career-label {
+        margin: 0 0 16px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--border-hairline);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+        color: var(--text-primary);
+      }
+
+      .target-career-label .kicker-bar {
+        width: 4px;
+        height: 18px;
+        border-radius: 2px;
+        background-color: var(--eduwill-yellow);
+        flex-shrink: 0;
+      }
+
+      .target-career-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .target-career-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14.5px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .target-career-bullet {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--eduwill-amber-text);
+        margin-top: 8px;
+        flex-shrink: 0;
+      }
+
+      /* Section 2.5: Core Tech Stack (4-card clean grid) */
+      .tech-stack-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .tech-stack-card {
+        background-color: #f8fafc;
+        border: 1px solid var(--border-hairline);
+        border-radius: 16px;
+        padding: 28px 24px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .tech-stack-card.is-highlight {
+        background-color: #fefce8;
+        border-color: var(--eduwill-yellow-border);
+      }
+
+      .tech-badge {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+        flex-shrink: 0;
+      }
+
+      .tech-badge.is-fe {
+        background-color: #dbeafe;
+        color: #2563eb;
+      }
+
+      .tech-badge.is-be {
+        background-color: #d1fae5;
+        color: #059669;
+      }
+
+      .tech-badge.is-ai {
+        background-color: var(--eduwill-yellow);
+        color: var(--eduwill-ink);
+      }
+
+      .tech-badge.is-ops {
+        background-color: #f3e8ff;
+        color: #7c3aed;
+      }
+
+      .tech-card-title {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+      }
+
+      .tech-card-sub {
+        margin: 4px 0 18px;
+        font-size: 13.5px;
+        font-weight: 500;
+        color: var(--text-muted);
+      }
+
+      .tech-stack-card.is-highlight .tech-card-sub {
+        color: var(--eduwill-amber-text);
+        font-weight: 600;
+      }
+
+      .tech-card-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 13.5px;
+        font-weight: 500;
+        color: #374151;
+        line-height: 1.5;
+      }
+
+      .tech-card-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .tech-card-list li::before {
+        content: '•';
+        color: var(--text-muted);
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .tech-stack-card.is-highlight .tech-card-list li::before {
+        color: var(--eduwill-amber-text);
+      }
+
+      /* Section 3: 6-Stage Curriculum Accordion (STAGE 01 open by default) + Official Accordion (all collapsed) */
+      .stage-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: 11.5px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        padding: 4px 10px;
+        border-radius: 6px;
+        background-color: #f1f5f9;
+        color: var(--eduwill-ink);
+        flex-shrink: 0;
+      }
+
+      .module-card.is-open .stage-badge,
+      .module-card.is-highlight .stage-badge {
+        background-color: var(--eduwill-yellow);
+        color: var(--eduwill-ink);
+      }
+
+      .module-card.is-highlight {
+        background-color: #fefce8;
+        border-color: var(--eduwill-yellow-border);
+      }
+
+      .stage-list {
+        list-style: none;
+        margin: 18px 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        font-size: 14.5px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+
+      .stage-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+      }
+
+      .stage-list li::before {
+        content: '•';
+        color: var(--eduwill-amber-text);
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+
+      .curriculum-official-head {
+        max-width: 920px;
+        margin: 72px auto 18px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .curriculum-official-title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+      }
+
+      .curriculum-list {
+        max-width: 920px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .curriculum-list.stage-accordion-list {
+        margin-bottom: 0;
+      }
+
+      .module-card {
+        background-color: #ffffff;
+        border: 1px solid var(--border-hairline);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        transition: border-color 180ms var(--ease-out), box-shadow 180ms var(--ease-out);
+      }
+
+      .module-card.is-open {
+        border-color: var(--eduwill-ink);
+        box-shadow: var(--shadow-elevated);
+      }
+
+      .module-trigger {
+        width: 100%;
+        padding: 20px 24px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        text-align: left;
+      }
+
+      .module-trigger:hover {
+        background-color: var(--bg-subtle);
+      }
+
+      .module-title-wrap {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .module-num {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: var(--bg-subtle);
+        border: 1px solid var(--border-strong);
+        font-size: 12.5px;
+        font-weight: 800;
+        color: var(--text-secondary);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .module-card.is-open .module-num {
+        background-color: var(--eduwill-yellow);
+        border-color: var(--eduwill-yellow);
+        color: var(--eduwill-ink);
+      }
+
+      .module-title {
+        font-size: 17px;
+        font-weight: 800;
+        color: var(--text-primary);
+      }
+
+      .module-hours {
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        color: var(--eduwill-amber-text);
+      }
+
+      .module-chevron {
+        width: 18px;
+        height: 18px;
+        color: var(--text-muted);
+        flex-shrink: 0;
+        transition: transform 200ms var(--ease-out);
+      }
+
+      .module-card.is-open .module-chevron {
+        transform: rotate(180deg);
+        color: var(--text-primary);
+      }
+
+      .module-body {
+        display: none;
+        padding: 0 24px 24px;
+        border-top: 1px solid var(--border-hairline);
+      }
+
+      .module-card.is-open .module-body {
+        display: block;
+      }
+
+      /* Official Table inside Curriculum Accordion */
+      .curriculum-table-wrap {
+        margin-top: 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .curriculum-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 14.5px;
+      }
+
+      .curriculum-table th {
+        padding: 12px 14px;
+        background-color: var(--bg-subtle);
+        border-bottom: 1px solid var(--border-hairline);
+        font-size: 12.5px;
+        font-weight: 800;
+        color: var(--text-secondary);
+        white-space: nowrap;
+      }
+
+      .curriculum-table td {
+        padding: 14px;
+        border-bottom: 1px solid var(--bg-subtle);
+        vertical-align: top;
+      }
+
+      .curriculum-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      .curriculum-cat {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--eduwill-amber-text);
+        white-space: nowrap;
+      }
+
+      .curriculum-subj-name {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--text-primary);
+      }
+
+      .curriculum-subj-desc {
+        margin-top: 4px;
+        font-size: 13.5px;
+        line-height: 1.55;
+        color: var(--text-secondary);
+      }
+
+      .curriculum-num-cell {
+        text-align: right;
+        font-weight: 700;
+        color: var(--text-primary);
+        white-space: nowrap;
+      }
+
+      .curriculum-num-muted {
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      .curriculum-subtotal-row td {
+        background-color: var(--eduwill-yellow-soft);
+        border-top: 1px solid var(--eduwill-yellow-border);
+        font-weight: 800;
+        color: var(--text-primary);
+        padding: 12px 14px;
+      }
+
+      /* Section 4: Student Reviews (3 concise cards) */
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .review-card {
+        background-color: #ffffff;
+        border: 1px solid var(--border-hairline);
+        border-top: 3px solid var(--eduwill-yellow);
+        border-radius: var(--radius-lg);
+        padding: 26px;
+        box-shadow: var(--shadow-card);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .review-seq {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--eduwill-amber-text);
+        margin-bottom: 10px;
+      }
+
+      .review-headline {
+        margin: 0 0 10px;
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 1.4;
+        color: var(--text-primary);
+      }
+
+      .review-quote {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.65;
+        color: var(--text-secondary);
+      }
+
+      .review-author {
+        margin-top: 18px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border-hairline);
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--text-primary);
+      }
+
+      .review-author span {
+        font-weight: 500;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      /* Section 5: Career Process (5 centered cards + yellow final card) + Yellow CTA */
+      .process-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .process-card {
+        background-color: #ffffff;
+        border: 1px solid var(--border-hairline);
+        border-radius: 16px;
+        padding: 34px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: var(--shadow-card);
+      }
+
+      .process-card.is-final {
+        background-color: var(--eduwill-yellow);
+        border-color: var(--eduwill-yellow);
+      }
+
+      .process-circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #f1f5f9;
+        color: var(--eduwill-ink);
+        font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+        font-size: 14.5px;
+        font-weight: 800;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+
+      .process-card.is-final .process-circle {
+        background-color: var(--eduwill-ink);
+        color: var(--eduwill-yellow);
+      }
+
+      .process-title {
+        margin: 0;
+        font-size: 15.5px;
+        font-weight: 800;
+        line-height: 1.45;
+        color: var(--text-primary);
+      }
+
+      .cta-section {
+        padding: 64px 0;
+        background-color: #ffffff;
+      }
+
+      .cta-box {
+        background-color: var(--eduwill-yellow);
+        border-radius: var(--radius-lg);
+        padding: 44px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+      }
+
+      .cta-title {
+        margin: 0;
+        font-size: clamp(1.45rem, 2.8vw, 2.05rem);
+        font-weight: 800;
+        line-height: 1.3;
+        letter-spacing: -0.025em;
+        color: var(--eduwill-ink);
+      }
+
+      .cta-desc {
+        margin: 8px 0 0;
+        font-size: 15px;
+        color: rgba(17, 24, 39, 0.84);
+      }
+
+      .btn-dark-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: var(--eduwill-ink);
+        color: #ffffff;
+        font-size: 15.5px;
+        font-weight: 700;
+        padding: 15px 30px;
+        border-radius: var(--radius-sm);
+        white-space: nowrap;
+        flex-shrink: 0;
+        min-height: 52px;
+        transition: transform 180ms var(--ease-out), background-color 180ms var(--ease-out);
+      }
+
+      .btn-dark-cta:hover {
+        background-color: #27272a;
+        transform: translateY(-2px);
+      }
+
+      /* Footer */
+      .site-footer {
+        background-color: #ffffff;
+        border-top: 1px solid var(--border-hairline);
+        padding: 44px 0 calc(110px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .footer-logo-img {
+        height: 42px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+        margin-bottom: 14px;
+      }
+
+      .footer-info {
+        font-size: 13px;
+        line-height: 1.85;
+        color: var(--text-muted);
+      }
+
+      .footer-info-centers {
+        margin-bottom: 8px;
+        color: var(--text-secondary);
+      }
+
+      /* Bottom Fixed Floating CTA Bar */
+      .floating-cta-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 45;
+        background-color: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-top: 1px solid var(--border-hairline);
+        box-shadow: 0 -8px 24px rgba(17, 24, 39, 0.08);
+        padding: 10px 0 calc(10px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .floating-cta-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .floating-cta-title {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .floating-cta-meta {
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+
+      .floating-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: var(--eduwill-yellow);
+        color: var(--eduwill-ink);
+        font-size: 14.5px;
+        font-weight: 800;
+        padding: 10px 24px;
+        border-radius: 10px;
+        min-height: 44px;
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background-color 180ms var(--ease-out), transform 180ms var(--ease-out);
+      }
+
+      .floating-cta-btn:hover {
+        background-color: var(--eduwill-yellow-hover);
+        transform: translateY(-1px);
+      }
+
+      @media (hover: hover) {
+        .hero-card,
+        .vision-card,
+        .target-career-box,
+        .tech-stack-card,
+        .review-card,
+        .process-card,
+        .module-card {
+          transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out),
+            border-color 200ms var(--ease-out), background-color 200ms var(--ease-out),
+            opacity 560ms var(--ease-out);
+        }
+        .hero-card:hover,
+        .vision-card:hover,
+        .target-career-box:hover,
+        .tech-stack-card:hover,
+        .review-card:hover,
+        .process-card:hover {
+          transform: translate3d(0, -4px, 0);
+          box-shadow: 0 16px 36px -12px rgba(17, 24, 39, 0.14),
+            0 0 0 1px rgba(17, 24, 39, 0.15);
+          border-color: var(--eduwill-ink);
+          background-color: #fffef7;
+        }
+        .tech-stack-card.is-highlight:hover {
+          background-color: #fef9c3;
+          border-color: var(--eduwill-ink);
+        }
+        .process-card.is-final:hover {
+          background-color: var(--eduwill-yellow-hover);
+          border-color: var(--eduwill-ink);
+          box-shadow: 0 16px 36px -12px rgba(17, 24, 39, 0.2),
+            0 0 0 1px rgba(17, 24, 39, 0.18);
+        }
+        .module-card:hover {
+          border-color: var(--eduwill-ink);
+          box-shadow: 0 10px 26px -12px rgba(17, 24, 39, 0.12);
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .hero-cards-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .vision-grid,
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+        .tech-stack-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .process-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .process-card.is-final {
+          grid-column: span 2;
+        }
+        .target-career-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        .cta-box {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+        .top-strip-hide-mobile {
+          display: none;
+        }
+        .header-inner {
+          height: 56px;
+        }
+        .brand-logo-img {
+          height: 34px;
+        }
+        .nav-links,
+        .header-actions .btn-primary {
+          display: none;
+        }
+        .mobile-menu-btn {
+          display: inline-flex;
+        }
+        .section {
+          padding: 56px 0;
+          scroll-margin-top: 60px;
+        }
+        .hero-section {
+          padding: 36px 0 44px;
+        }
+        .hero-ctas {
+          flex-direction: column;
+        }
+        .hero-ctas a {
+          width: 100%;
+        }
+        .hero-cards-grid {
+          gap: 10px;
+          margin-top: 30px;
+        }
+        .hero-card {
+          padding: 16px 12px;
+        }
+        .hero-card-value {
+          font-size: 16px;
+        }
+        .tech-stack-grid {
+          grid-template-columns: 1fr;
+        }
+        .process-grid {
+          grid-template-columns: 1fr;
+        }
+        .process-card.is-final {
+          grid-column: auto;
+        }
+        .module-trigger {
+          padding: 16px;
+        }
+        .module-title {
+          font-size: 15.5px;
+        }
+        .module-body {
+          padding: 0 14px 18px;
+        }
+        .curriculum-table th,
+        .curriculum-table td {
+          padding: 11px 8px;
+          font-size: 13px;
+        }
+        .curriculum-subj-name {
+          font-size: 13.5px;
+        }
+        .curriculum-subj-desc {
+          font-size: 12.5px;
+        }
+        .cta-box {
+          padding: 28px 20px;
+        }
+        .btn-dark-cta {
+          width: 100%;
+        }
+        .floating-cta-info {
+          display: none;
+        }
+        .floating-cta-btn {
+          width: 100%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        [data-reveal] {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Top Strip Banner -->
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <span>
+          <strong class="top-strip-highlight">26. 12. 28(월) 개강</strong>
+          <span class="top-strip-sep" aria-hidden="true"> · </span>
+          <span>GEN-AI RAG 문자(음성)데이터 응용SW 개발자</span>
+          <span class="top-strip-hide-mobile">
+            <span class="top-strip-sep" aria-hidden="true"> · </span>
+            <span class="tabular-nums">총 960시간 국비지원</span>
+          </span>
+        </span>
+        <a
+          href="https://naver.me/5qLaGB0M"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="top-strip-link"
+        >
+          과정지원하기 →
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. Sticky Header (3-Zone Top Bar) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand-link" aria-label="에듀윌 국비교육원 홈">
+          <img
+            src="https://postfiles.pstatic.net/MjAyNjExMThfMjU2/MDAxNzk0OTg5MDgwMjU5.8N_1vUtsssf0qwHFAHd3ia_-FJGu0E77AuYafesKitEg.XZuUTvFbqwsmEx7PtYiewMtrAwJxAb_4pD1M5FwCUaIg.PNG/%EC%97%90%EB%93%80%EC%9C%8C_%EA%B5%AD%EB%B9%84%EA%B5%90%EC%9C%A1%EC%9B%90_%EB%A1%9C%EA%B3%A0.png?type=w773"
+            alt="에듀윌 국비교육원 로고"
+            width="176"
+            height="44"
+            class="brand-logo-img"
+            referrerpolicy="no-referrer"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="brand-fallback">
+            <span class="brand-fallback-mark">E</span>
+            에듀윌 국비교육원
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="#vision" class="nav-link">핵심비전</a>
+          <a href="#tech-stack" class="nav-link">기술스택</a>
+          <a href="#curriculum" class="nav-link">커리큘럼</a>
+          <a href="#reviews" class="nav-link">수강후기</a>
+          <a href="#career" class="nav-link">취업연계</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            href="https://naver.me/5qLaGB0M"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            과정지원하기
+          </a>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobileMenuToggle"
+            aria-label="메뉴 열기"
+            aria-expanded="false"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-drawer" id="mobileDrawer">
+        <nav class="mobile-nav-list" aria-label="모바일 메뉴">
+          <a href="#vision" class="mobile-nav-link">핵심비전</a>
+          <a href="#tech-stack" class="mobile-nav-link">기술스택</a>
+          <a href="#curriculum" class="mobile-nav-link">커리큘럼</a>
+          <a href="#reviews" class="mobile-nav-link">수강후기</a>
+          <a href="#career" class="mobile-nav-link">취업연계</a>
+          <a
+            href="https://naver.me/5qLaGB0M"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            style="width: 100%; margin-top: 8px;"
+          >
+            과정지원하기
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- 1. Hero Section -->
+      <section class="hero-section">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero-center-wrap">
+            <h1 class="hero-title">
+              GEN-AI RAG<br />
+              <span class="hero-title-accent">문자(음성)데이터 응용SW 개발자</span>
+            </h1>
+
+            <p class="hero-desc">
+              생성형 AI + 클라우드 + 음성·문자 데이터 처리 역량을 한 번에 익히는 실무 중심 개발자 과정
+            </p>
+
+            <div class="hero-ctas">
+              <a
+                href="https://naver.me/5qLaGB0M"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary btn-primary-lg"
+              >
+                과정지원하기 →
+              </a>
+              <a href="#curriculum" class="btn-secondary-lg">커리큘럼 보기</a>
+            </div>
+          </div>
+
+          <div class="hero-cards-grid">
+            <div class="hero-card is-accent">
+              <div class="hero-card-kicker">개강일</div>
+              <div class="hero-card-value tabular-nums">26. 12. 28(월)</div>
+            </div>
+
+            <div class="hero-card">
+              <div class="hero-card-kicker">교육비용</div>
+              <div class="hero-card-value tabular-nums">9,113,280원</div>
+              <div class="hero-card-sub">(국비지원)</div>
+            </div>
+
+            <div class="hero-card is-accent">
+              <div class="hero-card-kicker">교육시간</div>
+              <div class="hero-card-value tabular-nums">총 960시간</div>
+              <div class="hero-card-sub">정규 614H · 프로젝트 320H · 재량 26H</div>
+            </div>
+
+            <div class="hero-card">
+              <div class="hero-card-kicker">취업분야</div>
+              <div class="hero-card-value">AI 응용 SW 개발</div>
+              <div class="hero-card-sub">음성인식·챗봇·디지털 헬스케어</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 3가지 VISION & 핵심 기술 스택 -->
+      <section id="vision" class="section section-subtle">
+        <div class="container">
+          <div class="section-header-center" data-reveal>
+            <div class="section-kicker">
+              <span class="kicker-bar" aria-hidden="true"></span>
+              3가지 VISION
+            </div>
+            <h2 class="section-title">
+              AI 기반 SW 개발 분야, <span class="highlight-underline">왜 중요한가</span>
+            </h2>
+            <p class="section-subtitle">
+              현업이 요구하는 생성형 AI · RAG · 클라우드 실전 역량에 집중합니다
+            </p>
+          </div>
+
+          <div class="vision-grid">
+            <article class="vision-card" data-reveal>
+              <div class="vision-num tabular-nums">01</div>
+              <h3 class="vision-title">AI 활용 산업의 폭발적 확산</h3>
+              <p class="vision-desc">텍스트·음성 기반 AI 기술이 전 산업군에 적용되는 시대</p>
+            </article>
+
+            <article class="vision-card" data-reveal data-reveal-delay="1">
+              <div class="vision-num tabular-nums">02</div>
+              <h3 class="vision-title">RAG 기반 정보 신뢰도 향상</h3>
+              <p class="vision-desc">생성형 AI에 정확한 검색을 더하는 핵심 기술, RAG</p>
+            </article>
+
+            <article class="vision-card" data-reveal data-reveal-delay="2">
+              <div class="vision-num tabular-nums">03</div>
+              <h3 class="vision-title">클라우드로 연결되는 실무 개발</h3>
+              <p class="vision-desc">기업은 클라우드에서 운영 가능한 AI 실전 인재를 원함</p>
+            </article>
+          </div>
+
+          <div class="target-career-grid">
+            <div class="target-career-box" data-reveal>
+              <h3 class="target-career-label">
+                <span class="kicker-bar" aria-hidden="true"></span>
+                추천 훈련대상
+              </h3>
+              <ul class="target-career-list">
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  생성형 AI 및 RAG 구조에 관심 있는 개발자
+                </li>
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  데이터 기반 SW 개발자로 취업 희망자
+                </li>
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  클라우드 기반 AI 배포 실무자
+                </li>
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  음성 인식(STT), 텍스트 요약 등 최신 기술 학습 희망자
+                </li>
+              </ul>
+            </div>
+
+            <div class="target-career-box" data-reveal data-reveal-delay="1">
+              <h3 class="target-career-label">
+                <span class="kicker-bar" aria-hidden="true"></span>
+                수료 후 취업분야
+              </h3>
+              <ul class="target-career-list">
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  AI 데이터 응용 개발사
+                </li>
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  음성인식·챗봇 기업
+                </li>
+                <li>
+                  <span class="target-career-bullet" aria-hidden="true"></span>
+                  디지털 헬스케어 기업 등
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 2.5 CORE TECH STACK -->
+      <section id="tech-stack" class="section">
+        <div class="container">
+          <div class="section-header-center" data-reveal>
+            <div class="section-kicker">CORE TECH STACK</div>
+            <h2 class="section-title">실무에 즉시 적용 가능한 핵심 기술 스택</h2>
+            <p class="section-subtitle">
+              프론트엔드부터 백엔드, RDB, 최신 생성형 AI RAG 파이프라인까지 유기적으로 체득합니다.
+            </p>
+          </div>
+
+          <div class="tech-stack-grid">
+            <article class="tech-stack-card" data-reveal>
+              <div class="tech-badge is-fe">FE</div>
+              <h3 class="tech-card-title">Frontend</h3>
+              <p class="tech-card-sub">현대적인 웹 인터페이스</p>
+              <ul class="tech-card-list">
+                <li>HTML5 / CSS3 / Modern JS</li>
+                <li>React 기반 Single Page App</li>
+                <li>Axios 비동기 데이터 통신</li>
+              </ul>
+            </article>
+
+            <article class="tech-stack-card" data-reveal data-reveal-delay="1">
+              <div class="tech-badge is-be">BE</div>
+              <h3 class="tech-card-title">Backend &amp; RDB</h3>
+              <p class="tech-card-sub">견고한 서버 및 데이터 설계</p>
+              <ul class="tech-card-list">
+                <li>Python &amp; Flask REST API</li>
+                <li>Node.js / Express 서버</li>
+                <li>MySQL 관계형 데이터베이스</li>
+              </ul>
+            </article>
+
+            <article class="tech-stack-card is-highlight" data-reveal data-reveal-delay="2">
+              <div class="tech-badge is-ai">AI</div>
+              <h3 class="tech-card-title">GEN-AI &amp; Data</h3>
+              <p class="tech-card-sub">생성형 AI 실무 응용</p>
+              <ul class="tech-card-list">
+                <li>OpenAI ChatGPT API 연동</li>
+                <li>LangChain &amp; LlamaIndex RAG</li>
+                <li>Pinecone 벡터 검색 데이터베이스</li>
+              </ul>
+            </article>
+
+            <article class="tech-stack-card" data-reveal>
+              <div class="tech-badge is-ops">OPS</div>
+              <h3 class="tech-card-title">DevOps &amp; Tools</h3>
+              <p class="tech-card-sub">현업 협업 및 배포 환경</p>
+              <ul class="tech-card-list">
+                <li>Git / GitHub 형상관리</li>
+                <li>클라우드 서버 배포 실습</li>
+                <li>VS Code 가상 개발환경</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 커리큘럼 (체계적인 6단계 교육과정 + 공식 교과목·시수 아코디언 전체 기본 접힘) -->
+      <section id="curriculum" class="section section-subtle">
+        <div class="container">
+          <div class="section-header-center" data-reveal>
+            <div class="section-kicker">CURRICULUM</div>
+            <h2 class="section-title">체계적인 6단계 교육과정</h2>
+            <p class="section-subtitle">
+              기초부터 프로젝트 포트폴리오까지 순서대로 정복합니다.
+            </p>
+          </div>
+
+          <div class="curriculum-list stage-accordion-list" id="stageAccordion">
+            <!-- STAGE 01: 기본 펼침 -->
+            <div class="module-card is-open" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="true">
+                <div class="module-title-wrap">
+                  <span class="stage-badge tabular-nums">STAGE 01</span>
+                  <span class="module-title">프로그래밍 기초 및 클라우드·DB 인프라</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <ul class="stage-list">
+                  <li>Python &amp; Java 객체지향 프로그래밍, Git/GitHub 협업 및 버전 관리</li>
+                  <li>AWS 클라우드(EC2, S3, Lambda) 인프라 및 MySQL·MongoDB 설계</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- STAGE 02: 기본 닫힘 -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="stage-badge tabular-nums">STAGE 02</span>
+                  <span class="module-title">웹 서비스 백엔드 API 및 프론트엔드 개발</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <ul class="stage-list">
+                  <li>FastAPI(Python) &amp; Spring Boot(Java) 기반 RESTful API 및 JWT 인증</li>
+                  <li>React.js 기반 AI 챗봇·추천 시스템 UI/UX 설계 및 API 연동</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- STAGE 03: 기본 닫힘 -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="stage-badge tabular-nums">STAGE 03</span>
+                  <span class="module-title">문자(OCR)·음성(STT/TTS) 멀티모달 데이터 처리</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <ul class="stage-list">
+                  <li>Tesseract OCR 기반 비정형 문서 텍스트 추출 및 전처리</li>
+                  <li>OpenAI Whisper, AWS Transcribe 활용 실시간 음성 인식(STT)·합성(TTS)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CORE AI: 기본 닫힘 -->
+            <div class="module-card is-highlight" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="stage-badge">CORE AI</span>
+                  <span class="module-title">생성형 AI(LLM) 및 RAG 검색 시스템 응용</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <ul class="stage-list">
+                  <li>OpenAI API(GPT), Hugging Face(BERT, T5) 기반 NLP 모델 활용 및 파인튜닝</li>
+                  <li>LangChain, LlamaIndex, FAISS, ChromaDB 연동 고성능 RAG 질의응답 구축</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- STAGE 05: 기본 닫힘 -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="stage-badge tabular-nums">STAGE 05</span>
+                  <span class="module-title">클라우드 AI 모델 서빙(MLOps) 및 실무 프로젝트</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <ul class="stage-list">
+                  <li>Docker, Kubernetes, AWS SageMaker, Kinesis 활용 AI 모델 배포 및 CI/CD 자동화</li>
+                  <li>참여기업 멘토링 기반 실무 프로젝트 수행 (AI 자동 회의록, 실시간 AI 뉴스 큐레이션)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- STAGE 06: 기본 닫힘 -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="stage-badge tabular-nums">STAGE 06</span>
+                  <span class="module-title">취업 역량 강화 및 채용약정 기업 매칭</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <ul class="stage-list">
+                  <li>1:1 커리어 코칭, 이력서·자기소개서·GitHub 포트폴리오 클리닉</li>
+                  <li>참여기업 인사담당자 초청 특강, 실전 모의면접 및 채용약정 우수 기업 매칭</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="curriculum-official-head" data-reveal>
+            <h3 class="curriculum-official-title tabular-nums">
+              세부 교과목 및 시수 (총 960시간)
+            </h3>
+          </div>
+
+          <div class="curriculum-list" id="curriculumAccordion">
+            <!-- 1번: 정규교과 (기본 닫힘 - 큰제목만 노출) -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="module-num tabular-nums">1</span>
+                  <span class="module-title">정규교과 (12개 교과목 · 이론 184시간 / 실기 430시간)</span>
+                  <span class="module-hours tabular-nums">614H</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <div class="curriculum-table-wrap">
+                  <table class="curriculum-table">
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>교과목명</th>
+                        <th style="text-align: right;">이론</th>
+                        <th style="text-align: right;">실기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">프로그래밍 기초 및 버전 관리</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">20</td>
+                        <td class="curriculum-num-cell tabular-nums">84</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">클라우드 기초 및 인프라 구축</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">10</td>
+                        <td class="curriculum-num-cell tabular-nums">30</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">웹 서비스 및 API 개발</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">20</td>
+                        <td class="curriculum-num-cell tabular-nums">50</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">데이터 베이스 및 클라우드 데이터 관리</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">10</td>
+                        <td class="curriculum-num-cell tabular-nums">30</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">OCR 기반 문서 데이터 분석</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">10</td>
+                        <td class="curriculum-num-cell tabular-nums">30</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">음성 AI 및 음성 데이터 처리</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">20</td>
+                        <td class="curriculum-num-cell tabular-nums">60</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">자연어 처리(NLP) 및 RAG 검색</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">20</td>
+                        <td class="curriculum-num-cell tabular-nums">40</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">클라우드 기반 AI 모델 서빙</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">20</td>
+                        <td class="curriculum-num-cell tabular-nums">40</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">MLOps 및 AI 모델 운영 자동화</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">15</td>
+                        <td class="curriculum-num-cell tabular-nums">25</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">실시간 데이터 스트리밍 및 분석</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">5</td>
+                        <td class="curriculum-num-cell tabular-nums">19</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">AI 기반 UX 및 서비스 설계</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">10</td>
+                        <td class="curriculum-num-cell tabular-nums">22</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">정규교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">참여기업 중심의 AI 응용 사례 분석</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">24</td>
+                        <td class="curriculum-num-cell curriculum-num-muted tabular-nums">-</td>
+                      </tr>
+                      <tr class="curriculum-subtotal-row">
+                        <td colspan="2">정규교과 소계 (총 614시간)</td>
+                        <td class="curriculum-num-cell tabular-nums">184</td>
+                        <td class="curriculum-num-cell tabular-nums">430</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2번: 프로젝트 (기본 닫힘 - 제목만 노출) -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="module-num tabular-nums">2</span>
+                  <span class="module-title">프로젝트 (1차 · 2차)</span>
+                  <span class="module-hours tabular-nums">320H</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <div class="curriculum-table-wrap">
+                  <table class="curriculum-table">
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>교과목명</th>
+                        <th style="text-align: right;">이론</th>
+                        <th style="text-align: right;">실기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="curriculum-cat">프로젝트</td>
+                        <td>
+                          <div class="curriculum-subj-name">1차</div>
+                        </td>
+                        <td class="curriculum-num-cell curriculum-num-muted tabular-nums">-</td>
+                        <td class="curriculum-num-cell tabular-nums">120</td>
+                      </tr>
+                      <tr>
+                        <td class="curriculum-cat">프로젝트</td>
+                        <td>
+                          <div class="curriculum-subj-name">2차</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">6</td>
+                        <td class="curriculum-num-cell tabular-nums">194</td>
+                      </tr>
+                      <tr class="curriculum-subtotal-row">
+                        <td colspan="2">프로젝트 소계 (총 320시간)</td>
+                        <td class="curriculum-num-cell tabular-nums">6</td>
+                        <td class="curriculum-num-cell tabular-nums">314</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3번: 재량교과 (기본 닫힘 - 제목만 노출) -->
+            <div class="module-card" data-reveal>
+              <button type="button" class="module-trigger" aria-expanded="false">
+                <div class="module-title-wrap">
+                  <span class="module-num tabular-nums">3</span>
+                  <span class="module-title">재량교과</span>
+                  <span class="module-hours tabular-nums">26H</span>
+                </div>
+                <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="module-body">
+                <div class="curriculum-table-wrap">
+                  <table class="curriculum-table">
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>교과목명</th>
+                        <th style="text-align: right;">시간</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="curriculum-cat">재량교과</td>
+                        <td>
+                          <div class="curriculum-subj-name">재량교과</div>
+                        </td>
+                        <td class="curriculum-num-cell tabular-nums">26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 수강생 후기 -->
+      <section id="reviews" class="section">
+        <div class="container">
+          <div class="section-header-center" data-reveal>
+            <div class="section-kicker">
+              <span class="kicker-bar" aria-hidden="true"></span>
+              수료생 후기
+            </div>
+            <h2 class="section-title">수강생들이 직접 전하는 변화</h2>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card" data-reveal>
+              <div>
+                <div class="review-seq tabular-nums">01</div>
+                <h3 class="review-headline">"이제는 필수가 된 AI, 비전공자도 도전 가능"</h3>
+                <p class="review-quote">
+                  인문계 전공자라 코딩이 낯설었지만 음성 인식·텍스트 요약 프로젝트를 직접 만들며
+                  자신감을 얻었고, 실무 포트폴리오까지 완성할 수 있었습니다.
+                </p>
+              </div>
+              <div class="review-author">문O진님 <span>(25세)</span></div>
+            </article>
+
+            <article class="review-card" data-reveal data-reveal-delay="1">
+              <div>
+                <div class="review-seq tabular-nums">02</div>
+                <h3 class="review-headline">"대세인 AI로 커리어 전환에 성공"</h3>
+                <p class="review-quote">
+                  코딩은 처음이었지만 강사님 피드백과 실습 위주 수업 덕분에 음성 기반 검색 시스템을
+                  직접 만들어보며 AI 커리어에 대한 확신을 얻었습니다.
+                </p>
+              </div>
+              <div class="review-author">이O현님 <span>(31세)</span></div>
+            </article>
+
+            <article class="review-card" data-reveal data-reveal-delay="2">
+              <div>
+                <div class="review-seq tabular-nums">03</div>
+                <h3 class="review-headline">"취준생도 AI기업 취업준비!"</h3>
+                <p class="review-quote">
+                  단순 모델 공부가 아니라 RAG 실무 시스템을 만들고 API 연동까지 경험해 기업
+                  포트폴리오로 자신 있게 제출했습니다.
+                </p>
+              </div>
+              <div class="review-author">박O진님 <span>(27세)</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. 에듀윌 취업 연계 PROCESS -->
+      <section id="career" class="section section-subtle">
+        <div class="container">
+          <div class="section-header-center" data-reveal>
+            <div class="section-kicker">EMPLOYMENT PROCESS</div>
+            <h2 class="section-title">에듀윌 취업 연계 PROCESS</h2>
+            <p class="section-subtitle">
+              수료부터 실전 취업까지 에듀윌 취업지원센터가 동행합니다.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card" data-reveal>
+              <div class="process-circle tabular-nums">01</div>
+              <h3 class="process-title">취업지원 컨설팅</h3>
+            </article>
+            <article class="process-card" data-reveal data-reveal-delay="1">
+              <div class="process-circle tabular-nums">02</div>
+              <h3 class="process-title">이력서·자소서 코칭</h3>
+            </article>
+            <article class="process-card" data-reveal data-reveal-delay="2">
+              <div class="process-circle tabular-nums">03</div>
+              <h3 class="process-title">모의면접 훈련</h3>
+            </article>
+            <article class="process-card" data-reveal>
+              <div class="process-circle tabular-nums">04</div>
+              <h3 class="process-title">연계기업 매칭</h3>
+            </article>
+            <article class="process-card is-final" data-reveal data-reveal-delay="1">
+              <div class="process-circle tabular-nums">05</div>
+              <h3 class="process-title">성공적인 취업!</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="cta-section" aria-label="과정지원하기 안내">
+        <div class="container">
+          <div class="cta-box" data-reveal>
+            <div>
+              <h2 class="cta-title">
+                국비지원으로<br />
+                GEN-AI RAG 응용SW 개발자 과정을 시작하세요
+              </h2>
+              <p class="cta-desc">
+                내일배움카드·교육일정·취업상담까지 네이버 폼으로 간편하게 신청할 수 있습니다.
+              </p>
+            </div>
+            <a
+              href="https://naver.me/5qLaGB0M"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-dark-cta"
+            >
+              과정지원하기 ↗
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <img
+          src="https://postfiles.pstatic.net/MjAyNjExMThfMjU2/MDAxNzk0OTg5MDgwMjU5.8N_1vUtsssf0qwHFAHd3ia_-FJGu0E77AuYafesKitEg.XZuUTvFbqwsmEx7PtYiewMtrAwJxAb_4pD1M5FwCUaIg.PNG/%EC%97%90%EB%93%80%EC%9C%8C_%EA%B5%AD%EB%B9%84%EA%B5%90%EC%9C%A1%EC%9B%90_%EB%A1%9C%EA%B3%A0.png?type=w773"
+          alt="에듀윌 국비교육원 로고"
+          width="168"
+          height="42"
+          class="footer-logo-img"
+          referrerpolicy="no-referrer"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"
+        />
+        <span style="display:none; font-weight:800; font-size:19px; color:#111827; margin-bottom:12px;">
+          에듀윌 국비교육원
+        </span>
+        <div class="footer-info">
+          <div class="footer-info-centers">
+            구로센터: 서울 구로구 디지털로32길 79, 조영빌딩 5층<br />
+            부평센터: 경기도 성남시 중원구 성남대로 1129, 하나빌딩 6층&amp;7층<br />
+            성남센터: 인천 부평구 경원대로 1366 상록스테이션타워 5층
+          </div>
+          사업자등록번호 : 119-81-54852 | 법인등록번호 : 110111-2450031<br />
+          통신판매업신고번호 : 구로 제 2008-00077호<br />
+          원격평생교육시설신고 제 207호 | 홈페이지운영담당자: 이진영
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Fixed Floating CTA Bar -->
+    <div class="floating-cta-bar" role="region" aria-label="과정지원하기 바로가기">
+      <div class="container floating-cta-inner">
+        <div class="floating-cta-info">
+          <div class="floating-cta-title">
+            에듀윌 국비교육원 · GEN-AI RAG 문자(음성)데이터 응용SW 개발자
+          </div>
+          <div class="floating-cta-meta tabular-nums">
+            26. 12. 28(월) 개강 · 9,113,280원 (국비지원) · 총 960시간
+          </div>
+        </div>
+        <a
+          href="https://naver.me/5qLaGB0M"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="floating-cta-btn"
+        >
+          과정지원하기 →
+        </a>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        // Scroll Reveal
+        const revealEls = document.querySelectorAll('[data-reveal]');
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                } else {
+                  entry.target.classList.remove('is-visible');
+                }
+              });
+            },
+            { threshold: 0.08, rootMargin: '0px 0px -24px 0px' }
+          );
+          revealEls.forEach(function (el) {
+            observer.observe(el);
+          });
+        } else {
+          revealEls.forEach(function (el) {
+            el.classList.add('is-visible');
+          });
+        }
+
+        // Mobile Drawer
+        const menuBtn = document.getElementById('mobileMenuToggle');
+        const drawer = document.getElementById('mobileDrawer');
+        if (menuBtn && drawer) {
+          menuBtn.addEventListener('click', function () {
+            const isOpen = drawer.classList.toggle('is-open');
+            menuBtn.setAttribute('aria-expanded', String(isOpen));
+          });
+          drawer.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+              drawer.classList.remove('is-open');
+              menuBtn.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+
+        // Curriculum Accordions (#stageAccordion: STAGE 01 open by default; #curriculumAccordion: all collapsed by default)
+        document.querySelectorAll('.curriculum-list .module-card').forEach(function (card) {
+          const trigger = card.querySelector('.module-trigger');
+          if (!trigger) return;
+          trigger.addEventListener('click', function () {
+            const isOpen = card.classList.contains('is-open');
+            card.classList.toggle('is-open', !isOpen);
+            trigger.setAttribute('aria-expanded', String(!isOpen));
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
